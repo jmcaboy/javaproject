@@ -31,7 +31,7 @@ import java.util.TimeZone;
 
 
 
-public class Main extends InputMoney {
+public class Main extends PrintMoney {
 	
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub

@@ -14,16 +14,15 @@ public class fileOut extends PrintMoney {
 			isFileExist = true;
 		}
 		fw = new FileWriter("C:\\Users\\kopo32\\Desktop\\exchange.csv", true);	
+		fw.write("\uFEFF");
 		if(isFileExist == false) {
-			String head = "DATE," + "COUNTRY," + "WON," + "RESULT," + "CHANGE" + "\n";
-			byte [] headenco = head.getBytes("euc-kr");
-			String headdeco = new String(headenco,"euc-kr");
-			fw.write(headdeco);
+			String head = "날짜," + "환전국가," + "바꿀 가격," + "환전결과," + "거스름돈" + "\n";
+			fw.write(head);
 		}	
 		
 		for(int i = 0;i<output.size();i++) {
 			fw.append(output.get(i));
-			fw.append(",");
+			//fw.append(",");
 		}
 		fw.write(fw.toString());
 		fw.append("\n");
