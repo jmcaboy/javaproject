@@ -1,4 +1,4 @@
-package projectAA;
+package Exchange;
 
 
 public class moneyExchange extends InputMoney {

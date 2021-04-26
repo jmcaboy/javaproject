@@ -1,4 +1,4 @@
-package projectAA;
+package Exchange;
 
 public class InputMoney extends ConstValue {
 	
