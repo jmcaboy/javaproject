@@ -1,5 +1,6 @@
 package Amusement;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Constant {
@@ -12,10 +13,13 @@ public class Constant {
 	
 	//연령대 구분
 	int Adult; int Teen; int Child; int Grand;
-	
+	 Calendar cal = Calendar.getInstance();
+     int currentYear  = cal.get(Calendar.YEAR);
+     
+
 	//할인율
-	static double Disabled_Dis = 0.4; static double Country_Dis = 0.5; static double Sib_Dis = 0.2;	static double Preg_Dis = 0.15;
-	
+	//static double Disabled_Dis = 0.4; static double Country_Dis = 0.5; static double Sib_Dis = 0.2;	static double Preg_Dis = 0.15;
+	static double Discount_rate;
 	
 	
 	
