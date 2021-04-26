@@ -6,7 +6,7 @@ public class moneyExchange extends InputMoney {
 	public static void exdol(int a, int b) {
 		output.add(date);output.add(country[b-1]);
 		output.add(Integer.toString(a));
-		result = a/ex_rate[b-1];
+		//result = a/ex_rate[b-1];
 		output.add(Double.toString(result));
 		result1 = a/ex_rate[b-1];
 		if(b == 3) {//엔화일 때

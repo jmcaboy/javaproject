@@ -22,7 +22,7 @@ public class fileOut extends PrintMoney {
 		
 		for(int i = 0;i<output.size();i++) {
 			fw.append(output.get(i));
-			//fw.append(",");
+			fw.append(",");
 		}
 		fw.write(fw.toString());
 		fw.append("\n");
