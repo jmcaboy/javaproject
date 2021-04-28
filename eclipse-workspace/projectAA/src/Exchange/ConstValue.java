@@ -1,5 +1,6 @@
 package Exchange;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -23,4 +24,5 @@ public class ConstValue {
 	static String date = df.format(cal.getTime());	//날짜 출력 형태로 입력한 문자열
 	static FileWriter fw;	//파일에 쓰기 위해 만들었음
 	static boolean isFileExist;		//파일이 있는지 없는지 판단
+	static File file = new File("C:\\Users\\kopo32\\Desktop\\exchange.csv");
 }

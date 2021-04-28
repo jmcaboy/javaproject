@@ -1,22 +1,18 @@
-package Amusement;
+package Amusement1;
 
 public class Processing extends Input{
 	//먼저 주민번호로 나이 처리를 하는 메소드
 	public static int CalAge(String ID, int currentYear) {
-		int age = Integer.parseInt(ID.substring(0,2));
-		if (ID.charAt(6) == 3 || ID.charAt(6) == 4) {
+		age = Integer.parseInt(ID.substring(0,2));
+		if ( ID.charAt(6) == '3'|| ID.charAt(6) == '4') {
 			age = currentYear-(2000+age)+1;
 		} else {
 			age = currentYear-(1900+age)+1;
 		}
-		Choice_Ticket(age);
 		return age;
 	}
 	//처리한 주민번호와 주, 야간 선택을 통해 금액 선택 메소드
 	public static int Choice_Ticket(int age) {
-		int price = 0;
-		int Day_Night = Input.Day_Night();
-		String nameofTicket = "";
 		if (age >= 19 && age < 65) {
 			switch(Day_Night) {
 			case 1:
@@ -68,13 +64,13 @@ public class Processing extends Input{
 		return price;
 	}
 	//할인 여부를 입력받아 할인 가격 계산 메소드
-	public static void CalDisc(double Discount_rate, int price) {
-		price = (int)Discount_rate*price;
-		//return price;
+	public static double CalDisc(double Discount_rate, int price) {
+		price1 = Discount_rate*price;
+		return price1;
 	}
 	//수량*할인가
-	public static int CalTicket(int price, int amount) {
-		int final_price = price*amount;
-		return final_price;
+	public static int CalTicket(double price1, int amount) {
+		total_price = (int)price1*amount;
+		return total_price;
 	}
 }
