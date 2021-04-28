@@ -17,9 +17,11 @@ public class Input extends Constant {
 		switch(Day_Night) {
 		case 1:
 			Day_Night = 1;
+			nameofTicket = "주간권";
 			break;
 		case 2:
 			Day_Night = 2;
+			nameofTicket = "야간권";
 			break;
 		default:
 			System.out.println("잘못된 선택입니다");

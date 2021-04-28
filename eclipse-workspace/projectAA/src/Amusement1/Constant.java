@@ -18,6 +18,7 @@ public class Constant {
 	static int Night_Adult = 46000; static int Night_teen =  40000; static int Night_child = 37000; static int Night_Grand = 37000;
 	static String nameofTicket = "";
 	static String Discountname = "";
+	static String nameofage = "";
 	static double price1;
 	static int amount;
 	static int amountprice;

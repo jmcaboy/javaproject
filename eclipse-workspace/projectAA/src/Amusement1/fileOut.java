@@ -22,12 +22,13 @@ public class fileOut extends Output {
 			fw.append(output.get(i));
 			fw.append(",");
 			cnt++;
-			if(cnt%51 == 0) {
+			if(cnt%5 == 0) {
 				fw.append("\n");
 			}
 		}
 		fw.write(fw.toString());
 		fw.append("\n");	
+		cnt = 0;
 	}
 	
 	public static void fileClose() {
