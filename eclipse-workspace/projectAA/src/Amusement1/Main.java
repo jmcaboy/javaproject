@@ -2,9 +2,9 @@ package Amusement1;
 
 import java.io.IOException;
 
-import Exchange.fileOut;
+import Exchange.fileOut1;
 
-public class Main extends Processing {
+public class Main extends Output {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
@@ -21,17 +21,19 @@ public class Main extends Processing {
 				Processing.CalTicket(price1, amount);
 				Output.printouteachTicket();		
 				Input.Ticketing();
+				fileOut.dataWrite();
 			} while(will != 0);
-			fileOut.dataWrite(output);
+			
 			System.out.println(output);
 			Output.Totalprice();
-			fileOut.fileClose();
+			//fw.flush();
+			//fw.close();
 			total_price = 0;
 			output.clear();
 			System.out.println("계속 진행(1 : 새로운 주문, 2: 프로그램 종료)");
 			go = scanner.nextInt();
 		} while(go != 2);
 		
-		
+		fileOut.fileClose();
 	}
 }

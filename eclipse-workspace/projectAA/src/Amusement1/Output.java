@@ -2,8 +2,6 @@ package Amusement1;
 
 import java.io.IOException;
 
-import Exchange.fileOut;
-
 public class Output extends Input{
 	public static void printouteachTicket() throws IOException {
 		System.out.printf("가격은 %d원입니다.\n", amountprice);

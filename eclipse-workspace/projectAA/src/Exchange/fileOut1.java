@@ -5,8 +5,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class fileOut extends PrintMoney {
-	public static void dataWrite(ArrayList<String> al) throws IOException {		
+public class fileOut1 extends PrintMoney {
+	public static void dataWrite1(ArrayList<String> al) throws IOException {		
 		if(file.exists() == false) {
 			isFileExist = false;
 		} else {

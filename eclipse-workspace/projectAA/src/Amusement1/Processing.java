@@ -1,7 +1,7 @@
 package Amusement1;
 
 public class Processing extends Input{
-	//먼저 주민번호로 나이 처리를 하는 메소드
+	//주민번호로 나이 처리를 하는 메소드
 	public static int CalAge(String ID, int currentYear) {
 		age = Integer.parseInt(ID.substring(0,2));
 		if ( ID.charAt(6) == '3'|| ID.charAt(6) == '4') {

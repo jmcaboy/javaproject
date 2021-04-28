@@ -39,5 +39,5 @@ public class Constant {
 	//파일
 	static FileWriter fw;	//파일에 쓰기 위해 만들었음
 	static boolean isFileExist;		//파일이 있는지 없는지 판단
-	static File file = new File("C:\\Users\\kopo32\\Desktop\\amusement.csv");
+	static File file = new File("amusement.csv");
 }

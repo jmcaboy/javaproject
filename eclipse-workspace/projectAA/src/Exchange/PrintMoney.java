@@ -24,7 +24,7 @@ public class PrintMoney extends moneyExchange {
 			System.out.printf("%d원 거스름돈 : %d장 ",kowon[i],changes.get(i));
 		}
 		System.out.println();
-		fileOut.dataWrite(output);
+		fileOut1.dataWrite1(output);
 		results.clear();changes.clear();
 		fw.close();
 	
