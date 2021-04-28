@@ -70,7 +70,7 @@ public class Input extends Constant {
 			Discountname = "임산부 우대적용";
 			break;
 		case 0:
-			Discount_rate = 1;
+			Discount_rate = 0;
 			Discountname = "우대적용 없음";
 			break;
 		default:

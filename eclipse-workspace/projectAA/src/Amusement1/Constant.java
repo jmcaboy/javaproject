@@ -20,7 +20,8 @@ public class Constant {
 	static String Discountname = "";
 	static double price1;
 	static int amount;
-	static int total_price;
+	static int amountprice;
+	static int total_price = 0;
 	//연령대 구분
 	static int age;
 	//날짜와 형식 지정
@@ -38,5 +39,5 @@ public class Constant {
 	//파일
 	static FileWriter fw;	//파일에 쓰기 위해 만들었음
 	static boolean isFileExist;		//파일이 있는지 없는지 판단
-	static File file = new File("C:\\Users\\kopo32\\Desktop\\exchange.csv");
+	static File file = new File("C:\\Users\\kopo32\\Desktop\\amusement.csv");
 }

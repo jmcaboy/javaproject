@@ -1,18 +1,17 @@
 package Amusement1;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class fileOut extends Processing {
-	public static void dataWrite() throws IOException {		
+public class fileOut extends Output {
+	public static void dataWrite(ArrayList<String>output) throws IOException {		
 		if(file.exists() == false) {
 			isFileExist = false;
 		} else {
 			isFileExist = true;
 		}
-		fw = new FileWriter("C:\\Users\\kopo32\\Desktop\\amusement.csv", true);	
+		fw = new FileWriter(file, true);	
 		fw.write("\uFEFF");
 		if(isFileExist == false) {
 			String head = "날짜," + "권종," + "수량," + "가격," + "우대사항\n";

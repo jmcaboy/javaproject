@@ -65,12 +65,12 @@ public class Processing extends Input{
 	}
 	//할인 여부를 입력받아 할인 가격 계산 메소드
 	public static double CalDisc(double Discount_rate, int price) {
-		price1 = Discount_rate*price;
+		price1 = (1-Discount_rate)*price;
 		return price1;
 	}
 	//수량*할인가
 	public static int CalTicket(double price1, int amount) {
-		total_price = (int)price1*amount;
-		return total_price;
+		amountprice = (int)price1*amount;
+		return amountprice;
 	}
 }
