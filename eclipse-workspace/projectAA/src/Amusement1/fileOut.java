@@ -22,7 +22,7 @@ public class fileOut extends Output {
 			fw.append(output.get(i));
 			fw.append(",");
 			cnt++;
-			if(cnt%5 == 0) {
+			if(cnt%6 == 0) {
 				fw.append("\n");
 			}
 		}
