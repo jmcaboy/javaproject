@@ -11,7 +11,7 @@ public class fileOut extends Output {
 		} else {
 			isFileExist = true;
 		}
-		fw = new FileWriter("amusement.csv", true);	
+		fw = new FileWriter(file, true);	
 		fw.write("\uFEFF");
 		if(isFileExist == false) {
 			String head = "날짜," + "권종," +"연령구분," + "수량," + "가격," + "우대사항\n";

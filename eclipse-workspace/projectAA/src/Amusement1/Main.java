@@ -21,11 +21,12 @@ public class Main extends Output {
 				Processing.CalTicket(price1, amount);
 				Output.printouteachTicket();		
 				Input.Ticketing();
-				fileOut.dataWrite();
+				
 			} while(will != 0);
-			
+			fileOut.dataWrite();
 			System.out.println(output);
 			Output.Totalprice();
+			fileOut.fileClose();
 			//fw.flush();
 			//fw.close();
 			total_price = 0;
@@ -34,6 +35,6 @@ public class Main extends Output {
 			go = scanner.nextInt();
 		} while(go != 2);
 		
-		fileOut.fileClose();
+		
 	}
 }
